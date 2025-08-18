@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.article {
+  max-width: 900px;
+  padding: 2rem 3rem;
+}
+
+.article-title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.article-desp {
+  color: #fff;
+  font-size: 15px;
+}
+
+.nav-ul {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  margin-top: -117px;
+}
+
+.nav-li {
+  margin: 1rem 0;
+}
+
+.nav-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  text-indent: -9999px;
+  /* opacity: .5; */
+  transition-duration: .3s;
+}
+
+.nav-li:hover {
+  opacity: .8;
+}
+
+.nav-link-index {
+  background-color: #000;
+}
+
+.nav-link-current {
+  opacity: 1;
+}
+
+.nav-link-acrobat {
+  background-color: #333;
+}
+
+.nav-link-premiere {
+  background-color: #dd1f8e;
+}
