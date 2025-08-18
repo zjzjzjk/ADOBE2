@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+html,
+body {
+  height: 100%;
+}
+
+/* 舊式寫法 新式是100 */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.header-img {
+  width: 50px;
+}
+
+.header-title {
+  color: red;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.nav-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.nav-li {
+  width: 33.333333%;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 100px;
+  text-transform: capitalize;
+  transition-duration: .3s;
+}
+
+.nav-link-acrobat {
+  background-color: #333;
+}
+
+.nav-link-premiere {
+  background-color: #dd1f8e;
+}
+
+.nav-link-photoshop {
+  background-color: #00a7e2;
+}
+
+.nav-link-after-effects {
+  background-color: #620294;
+}
+
+.nav-link-illustrator {
+  background-color: #ee9a10;
+}
+
+.nav-link-dreamweaver {
+  background-color: #84c922;
+}
+
+.nav-link:hover {
+  /* filter: brightness(1.1); */
+  opacity: .8;
+}
