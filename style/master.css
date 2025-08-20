@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
 .article {
-  max-width: 900px;
+  max-width: 700px;
   padding: 2rem 3rem;
+  text-align: justify;
+  color: #fff;
+  text-transform: capitalize;
 }
 
 .article-title {
-  color: #fff;
   font-size: 2rem;
 }
 
 .article-desp {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .nav-ul {
@@ -54,4 +57,88 @@
 
 .nav-link-premiere {
   background-color: #dd1f8e;
+}
+
+.mg-top-4 {
+  margin-top: 4rem;
+}
+
+/* grid----------------------- */
+
+.grid {
+  display: grid;
+  /* grid-template-columns: 33.3333% 33.3333% 33.3333%; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* card-overlay----------------------------- */
+
+.card {
+  position: relative;
+}
+
+.card-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .3;
+  width: 100%;
+  height: 100%;
+  transition-duration: .3s;
+}
+
+.card-overlay-hover::after {
+  opacity: 0;
+}
+
+.card-overlay-hover:hover::after {
+  opacity: .3;
+}
+
+
+.card-icon .card-icon-wrapper {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon-eye {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.card-icon-hover .card-icon-eye {
+  transform: scale(0);
+  transition-duration: .3s;
+}
+
+.card-icon-hover:hover .card-icon-eye {
+  transform: scale(1);
+}
+
+.ani-try {
+  animation: ani-try .5s ease-in infinite ;
+}
+@keyframes ani-try {
+  from{
+    transform: scale(1);
+  }
+  to{
+     transform: scale(1.2);
+  }
 }
